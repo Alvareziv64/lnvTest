@@ -1,0 +1,128 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 256px;
+    height: 16px;
+    padding: 11px 16px;
+}
+
+ /* SEARCH BAR */
+
+.searchBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchBar--categories a{
+    text-decoration: none;
+    color: black;
+}
+.searchBar--categories{
+    display: flex;
+    justify-content: space-between;
+    width: 760px;
+    font-family: lato;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.searchBar__inputDiv{
+display: flex;
+justify-content: space-between;
+width: 400px;
+height: 35px;
+border: black solid 1px;
+border-radius: 4px;
+margin-right: 14px;
+}
+
+.searchBar__inputDiv--input{
+width: 350px;
+border: none;
+outline: none;
+font-family: lato;
+font-weight: 400;
+font-size: 14px;
+padding-left: 18px;
+}
+
+.searchBar__inputDiv--button{
+    width: 40px;
+    height: 35px;
+    border: none;
+    background-color: black
+}
+
+/* SECONDARY BAR */
+
+.secondary-bar a {
+    
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+.secondary-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 45px;
+    margin-top: 5px;
+    background-color: #f8f8f8;
+}
+
+.secondary-bar__items{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: lato;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* INFO BANNER */
+
+.info-banner{
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    background-color: #AF0E4E;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-banner h2 {
+    font-family: lato;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+.info-banner h2 b {
+    font-weight: 900;
+}
+
+.info-banner h2 a {
+    color: white;
+    font-weight: 700;
+    text-underline-position: under;
+    margin-left: 10px;
+}
