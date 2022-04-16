@@ -34,6 +34,7 @@
   text-decoration: none;
   color: black;
 }
+
 .navbar__categories {
   display: flex;
   justify-content: space-between;
@@ -169,7 +170,7 @@
 .filter__title {
   width: 100vw;
   max-width: 1281px;
-  min-width: 1024px;
+  min-width: 350px;
   padding-top: 40px;
   border-bottom: #cccccc 1px solid;
   margin-bottom: 20px;
@@ -178,7 +179,7 @@
 .products {
   width: 100vw;
   max-width: 1281px;
-  min-width: 1024px;
+  min-width: 350px;
   display: flex;
   justify-content: center;
   margin-left: 20px;
@@ -203,6 +204,7 @@
   height: 194px;
   border-bottom: #cccccc 1px solid;
   margin-right: 22px;
+  padding-bottom: 10px;
 }
 
 .products__price-filter--text {
@@ -304,7 +306,7 @@
   width: 190px;
   height: 135px;
   margin-top: 11px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .cards__container--img img {
@@ -341,4 +343,96 @@
   color: white;
   border: none;
   border-radius: 4px;
+}
+
+.cards__container--button:hover {
+  background-color: #106daa;
+}
+
+.info-banner__divisor{
+ max-width: 1280px;
+ height: 76px;
+ text-align: center;
+ margin-bottom: 10px;
+ margin-top: 30px;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 1024px) {
+  .navbar__categories {
+    width: 100vw;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .navbar__inputDiv {
+    width: 300px;
+    margin-right: 14px;
+    margin-left: 5px;
+  }
+
+  .navbar__inputDiv--input {
+    width: 250px;
+  }
+
+  .secondary-bar {
+    height: auto;
+  }
+
+  .secondary-bar__items {
+    flex-wrap: wrap;
+  }
+
+  .filter__title--h3 {
+    font-size: 24px;
+  }
+
+  .filter-bar__items {
+    width: 68vw;
+    font-size: 18px;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar__inputDiv {
+    margin-top: 10px;
+  }
+
+  .info-banner h2 {
+    text-align: center;
+  }
+
+  .products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products__filter-result {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .secondary-bar {
+    height: auto;
+  }
+
+  .filter__title--h3 {
+    font-size: 18px;
+  }
+
+  .filter-bar {
+    height: auto;
+  }
+
+  .filter-bar__items {
+    font-size: 16px;
+    width: auto;
+  }
 }
